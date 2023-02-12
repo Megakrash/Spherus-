@@ -8,7 +8,7 @@ This application was created for project 3 of the "web and mobile developer" tra
 
 - Clone this repo, enter it
 - Check the .env.sample in frontend & backend then create .env 
-- Run command `npm run setup` & "npm run migrate"
+- Run command `npm run setup` & `npm run migrate`
 
 
 ### Available Commands
