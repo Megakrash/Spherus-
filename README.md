@@ -1,16 +1,15 @@
 ## Concept
 
-This template is meant to serve as a foundation for every P2/P3 following the React-Express-MySQL stack, as learned in Wild Code School.
-It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying as simple as possible to use.
+This application was created for project 3 of the "web and mobile developer" training at the Wild Code School in Nantes.
 
 ## Setup & Use
 
 ### Project Initialization
 
-- In VSCode, install plugins **Prettier - Code formatter** and **ESLint** and configure them
 - Clone this repo, enter it
-- Run command `npm run setup`
-- _NB: To launch the backend server, you'll need an environment file with database credentials. You'll find a template one in `backend/.env.sample`_
+- Check the .env.sample in frontend & backend then create .env 
+- Run command `npm run setup` & "npm run migrate"
+
 
 ### Available Commands
 
