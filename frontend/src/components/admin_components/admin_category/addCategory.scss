@@ -1,0 +1,21 @@
+.addCategory {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &_input {
+    width: 80%;
+    height: 25px;
+    border-radius: 20px;
+    text-indent: 2%;
+    font-family: $font-text;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .addCategory {
+    &_input {
+      width: 46%;
+    }
+  }
+}

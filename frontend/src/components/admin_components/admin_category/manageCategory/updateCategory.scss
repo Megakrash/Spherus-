@@ -1,0 +1,116 @@
+.updateCategory {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &_btn {
+    width: 100%;
+    min-height: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // justify-content: space-between;
+    padding: 2%;
+    background-color: transparent;
+    border: 2px solid $fourth-color;
+    color: $secondary-color;
+    font-size: 15px;
+    font-family: $font-display;
+    transition: 0.3s ease-in-out;
+    border-radius: 20px;
+
+    &:hover {
+      border: 2px solid $tertiary-color;
+    }
+
+    &_name {
+      font-family: $font-display;
+      color: $primary-color;
+    }
+
+    &_update {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+
+      &_faPen {
+        margin-left: 10px;
+        background-color: transparent;
+        cursor: pointer;
+
+        .svgPen {
+          &:hover {
+            color: $delete-color;
+          }
+        }
+      }
+
+      &_form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 2%;
+        gap: 15px;
+
+        input {
+          border-radius: 20px;
+          height: 25px;
+          text-indent: 2%;
+        }
+
+        &_faCheck {
+          background-color: transparent;
+          cursor: pointer;
+
+          .svgCheck {
+            &:hover {
+              color: $delete-color;
+            }
+          }
+        }
+      }
+    }
+
+    &_trash {
+      background-color: transparent;
+      cursor: pointer;
+      margin-left: 5%;
+
+      .svgTrash {
+        &:hover {
+          color: $delete-color;
+        }
+      }
+    }
+
+    &_show {
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  &_btn_activ {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: $tertiary-color;
+    box-shadow: 0 0 5px 1px $primary-color;
+    color: $secondary-color;
+    font-size: 15px;
+    font-family: $font-display;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.02);
+    border-radius: 20px;
+    cursor: pointer;
+
+    .svgsamere {
+      rotate: -90deg;
+    }
+  }
+}
