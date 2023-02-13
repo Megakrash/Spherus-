@@ -136,7 +136,7 @@ function VideosOnCat({ id, name }) {
               <option value="">---</option>
               {filterVideos().map((infos) => {
                 return (
-                  <option key={infos.name} value={infos.id}>
+                  <option key={infos.id} value={infos.id}>
                     {infos.title}
                   </option>
                 );

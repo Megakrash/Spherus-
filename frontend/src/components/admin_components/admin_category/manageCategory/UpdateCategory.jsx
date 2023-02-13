@@ -46,7 +46,15 @@ function UpdateCategory({ id, name, getAllCat }) {
   return (
     <div className="updateCategory">
       <div className={classButton()}>
-        <p className="updateCategory_btn_name">{name}</p>
+        <button
+          type="button"
+          className="updateCategory_btn_name"
+          onClick={() => {
+            setShowCat(!showCat);
+          }}
+        >
+          {name}
+        </button>
         <div className="updateCategory_btn_update">
           <button
             className="updateCategory_btn_update_faPen"
@@ -99,6 +107,7 @@ function UpdateCategory({ id, name, getAllCat }) {
           Show category <FaAngleLeft className="svgsamere" />
         </button>
       </div>
+
       {showCat === true && <VideosOnCat id={id} name={name} />}
     </div>
   );
