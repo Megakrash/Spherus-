@@ -1,0 +1,11 @@
+.allCategory {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &_title {
+    margin-top: 2.5%;
+    font-family: $font-display;
+    font-size: 20px;
+  }
+}

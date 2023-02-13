@@ -1,0 +1,52 @@
+@import "./addCategory.scss";
+@import "./allCategory.scss";
+@import "./manageCategory/updateCategory.scss";
+@import "./manageCategory/videosOnCat.scss";
+
+.adminCategory {
+  width: 96%;
+  box-shadow: 0 0 5px 1px $primary-color;
+  border-radius: 20px;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &_add {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    gap: 20px;
+
+    &_btn {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+
+      h1 {
+        font-family: $font-display;
+        font-size: 20px;
+      }
+    }
+  }
+
+  &_cat {
+    margin-left: 2%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .adminCategory {
+    flex-direction: row;
+    gap: 15px;
+
+    &_add {
+      width: 35%;
+    }
+
+    &_cat {
+      width: 65%;
+    }
+  }
+}

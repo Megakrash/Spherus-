@@ -1,0 +1,131 @@
+.videosOnCat {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-text;
+
+  &_curent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &_title {
+      font-size: 15px;
+    }
+
+    &_box {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+
+      &_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        gap: 10px;
+
+        &_video {
+          border-radius: 20px;
+          box-shadow: 0 0 5px 1px $primary-color;
+        }
+
+        &_title {
+          font-size: 12px;
+        }
+
+        .erase {
+          width: 100px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  &_add {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+
+    &_box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &_video {
+      margin-top: 5%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      &_select {
+        font-family: $font-text;
+        color: $secondary-color;
+        font-size: 15px;
+        width: 60%;
+        height: 25px;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .videosOnCat {
+    &_curent {
+      gap: 20px;
+
+      &_title {
+        font-size: 17px;
+      }
+
+      &_box {
+        justify-content: flex-start;
+        gap: 20px;
+
+        &_card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 20%;
+          gap: 10px;
+
+          &_video {
+            border-radius: 20px;
+            box-shadow: 0 0 5px 1px $primary-color;
+          }
+
+          &_title {
+            font-size: 12px;
+          }
+
+          .erase {
+            width: 100px;
+            height: 30px;
+          }
+        }
+      }
+    }
+
+    &_add {
+      &_box {
+        gap: 25px;
+      }
+
+      &_video {
+        margin-top: 4%;
+        gap: 20px;
+
+        &_select {
+          font-size: 17px;
+          width: 50%;
+          height: 25px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
