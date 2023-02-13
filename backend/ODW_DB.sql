@@ -187,6 +187,18 @@ VALUES
     1,
     'token_5',
     '2022-12-01'
+  ),
+  (
+    'assets/images/avatars/6.jpg',
+    'Guest',
+    'Star',
+    'AdminGuest',
+    '1900-01-01',
+    'mail@mail.com',
+    '$argon2id$v=19$m=65536,t=5,p=1$2jQ8Ak7ACKl0NucrEUEBeQ$c1RlweqzXfpNUXG2WxPvZo+ovQd6jL7AeQubWxtUWOo',
+    1,
+    'token_6',
+    '2022-12-01'
   );
 
 -- -----------------------------------------------------
