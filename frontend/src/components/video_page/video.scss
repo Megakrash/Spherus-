@@ -5,6 +5,9 @@
 
   .video-player {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
     .video {
       position: relative;
@@ -48,29 +51,6 @@
         gap: 10px;
       }
     }
-  }
-
-  .description {
-    display: flex;
-    flex-direction: column;
-    padding: 3% 12% 0 12%;
-
-    .prevBtn {
-      width: 50px;
-      height: auto;
-      background-color: transparent;
-      position: absolute;
-      cursor: pointer;
-      padding-top: 10px;
-      left: -5px;
-      cursor: pointer;
-
-      .arrow {
-        color: $tertiary-color;
-        width: 45px;
-        height: auto;
-      }
-    }
 
     .lock-container {
       display: flex;
@@ -97,6 +77,29 @@
         cursor: pointer;
       }
     }
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 12% 0 12%;
+
+    .prevBtn {
+      width: 50px;
+      height: auto;
+      background-color: transparent;
+      position: absolute;
+      cursor: pointer;
+      padding-top: 10px;
+      left: -5px;
+      cursor: pointer;
+
+      .arrow {
+        color: $tertiary-color;
+        width: 45px;
+        height: auto;
+      }
+    }
 
     .info_container {
       font-size: 1.5rem;
@@ -106,20 +109,18 @@
         font-size: 3.5rem;
       }
 
-      .info {
-        margin-block: 10px;
-        font-size: 2.5rem;
-        text-align: center;
-      }
-
       .info-video-categories-container {
         display: flex;
         gap: 10px;
       }
 
+      .info {
+        margin-top: 2%;
+        font-size: 2.5rem;
+      }
+
       .p-desc {
-        margin-top: 20px;
-        text-align: center;
+        margin-top: 3%;
       }
     }
   }
@@ -143,6 +144,12 @@
 
       .video.locked {
         opacity: 40%;
+
+        .lock-container {
+          .lock-desc {
+            font-size: 2rem;
+          }
+        }
       }
 
       .info-video {
@@ -170,9 +177,14 @@
     .description {
       padding: 3% 5% 1% 5%;
 
-      .lock-container {
-        .lock-desc {
-          font-size: 2rem;
+      .info_container {
+        .info {
+          margin-top: 1%;
+          font-size: 2.5rem;
+        }
+
+        .p-desc {
+          margin-top: 1%;
         }
       }
     }

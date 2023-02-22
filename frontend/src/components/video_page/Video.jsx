@@ -56,6 +56,7 @@ function Video({ title, description, arrCatName, date, display, videoUrl }) {
             className="video"
             src={url}
             controls
+            controlsList="nodownload"
           >
             <track kind="captions" />
           </video>
@@ -85,6 +86,17 @@ function Video({ title, description, arrCatName, date, display, videoUrl }) {
             </div>
           </div>
         )}
+        {!userToken && display === 0 && (
+          <div className="lock-container">
+            <CiLock className="lock-icon" />
+            <p className="lock-desc">
+              Content is not available for non subscribers
+            </p>
+            <button type="button" className="btn btn-subscribe">
+              <NavLink to="/registration">Subscribe</NavLink>
+            </button>
+          </div>
+        )}
       </div>
       {/* END VIDEO */}
       {/* DESCRIPTION */}
@@ -98,18 +110,6 @@ function Video({ title, description, arrCatName, date, display, videoUrl }) {
         >
           <FaAngleLeft className="arrow" />
         </button>
-
-        {!userToken && display === 0 && (
-          <div className="lock-container">
-            <CiLock className="lock-icon" />
-            <p className="lock-desc">
-              Content is not available for non subscribers
-            </p>
-            <button type="button" className="btn btn-subscribe">
-              <NavLink to="/registration">Subscribe</NavLink>
-            </button>
-          </div>
-        )}
         <div className="info_container">
           <hr />
           <p className="info-video-title">{title}</p>
@@ -124,7 +124,7 @@ function Video({ title, description, arrCatName, date, display, videoUrl }) {
               );
             })}
           </div>
-          <h1 className="info">Description</h1>
+          <p className="info">Description</p>
           <p className="p-desc">{description}</p>
           <hr />
         </div>

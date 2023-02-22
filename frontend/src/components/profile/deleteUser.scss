@@ -1,5 +1,10 @@
 .btn-delete {
   margin-top: 10%;
-  margin-bottom: 10%;
   font-weight: 400;
+}
+
+@media screen and (min-width: 600px) {
+  .btn-delete {
+    margin-top: 2%;
+  }
 }
