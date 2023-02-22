@@ -41,7 +41,7 @@ function Footer() {
                     import.meta.env.VITE_PORT_BACKEND
                   }/assets/images/front/logo_spherus_short.png`
             }
-            alt="sphereus"
+            alt="spherus"
           />
         </NavLink>
       </div>

@@ -110,8 +110,10 @@
   .pub {
     margin-bottom: 2%;
 
-    &_box {
-      margin-bottom: initial;
+    &_link {
+      box-shadow: 0 0 5px 1px $secondary-color;
+      border-radius: 20px;
+      height: 250px;
     }
   }
 

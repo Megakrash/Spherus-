@@ -179,9 +179,9 @@ VALUES
   (
     'assets/images/avatars/5.jpg',
     'Jonathan',
-    'Scattolini',
+    'Zocatelli',
     'Megakrash',
-    '1980-02-02',
+    '2000-01-01',
     'jscattolini@gmail.com',
     '$argon2id$v=19$m=65536,t=5,p=1$vN99MwcsPZrazM1lAen+0g$mI4VIGHa/kT/4ShiAyCp0OZF853+N+bTUAdHDN86mic',
     1,
@@ -494,13 +494,13 @@ VALUES
   (
     '/assets/images/Pub11672837806144.jpg',
     'Ceci est la pub numéro un',
-    'https://free.fr',
+    'https://www.ecophone44.com',
     'Pub1'
   ),
   (
     '/assets/images/Pub21672837847590.jpg',
     'Ceci est la pub numéro deux',
-    'https://grosbill.com',
+    'https://www.ecophone44.com',
     'Pub2'
   );
 
