@@ -7,9 +7,10 @@ This application was created for project 3 of the "web and mobile developer" tra
 ### Project Initialization
 
 - Clone this repo, enter it
-- Check the .env.sample in frontend & backend then create .env 
+- Check the .env.sample in frontend & backend then create .env in the front and the back.
 - Run command `npm run setup` & `npm run migrate`
-- You can log in with this account : mail@mail.com / password : guest
+- To have Admin rights you can log in with this account : mail@mail.com / password : guest
+- Run the app on http://localhost:3000/ with `npm run dev`
 
 
 ### Available Commands
