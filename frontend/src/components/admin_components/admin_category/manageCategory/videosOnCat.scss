@@ -25,6 +25,8 @@
         align-items: center;
         width: 40%;
         gap: 10px;
+        -webkit-animation: swing-in-left-bck 0.5s ease-in-out both;
+        animation: swing-in-left-bck 0.5s ease-in-out both;
 
         &_video {
           border-radius: 20px;

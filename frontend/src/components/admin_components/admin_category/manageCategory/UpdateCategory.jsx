@@ -108,7 +108,14 @@ function UpdateCategory({ id, name, getAllCat }) {
         </button>
       </div>
 
-      {showCat === true && <VideosOnCat id={id} name={name} />}
+      {showCat === true && (
+        <VideosOnCat
+          id={id}
+          name={name}
+          showCat={showCat}
+          setShowCat={setShowCat}
+        />
+      )}
     </div>
   );
 }
