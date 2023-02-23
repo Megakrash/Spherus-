@@ -27,10 +27,6 @@ const navbarDesktop = ({ handlePopUpLogIn, handleRegisterPopUp }) => {
 
   useEffect(() => {
     getUser();
-  }, []);
-
-  useEffect(() => {
-    getUser();
   }, [avatarUrlContext]);
 
   return (

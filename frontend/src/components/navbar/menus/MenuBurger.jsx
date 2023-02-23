@@ -57,6 +57,22 @@ function MenuBurger({
     }
   }, [window.innerWidth]);
 
+  useEffect(() => {
+    const checkIfClickedOutside = (e) => {
+      if (
+        isBurgerClicked &&
+        refBurgerContainer.current &&
+        !refBurgerContainer.current.contains(e.target)
+      ) {
+        setIsBurgerClicked(false);
+      }
+    };
+    document.addEventListener("mousedown", checkIfClickedOutside);
+    return () => {
+      document.removeEventListener("mousedown", checkIfClickedOutside);
+    };
+  }, [isBurgerClicked]);
+
   return (
     <div
       ref={refBurgerContainer}

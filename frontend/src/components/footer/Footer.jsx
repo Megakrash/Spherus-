@@ -46,13 +46,13 @@ function Footer() {
         </NavLink>
       </div>
       <div className="footer_social">
-        <a href="https://www.instagram.com">
+        <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
           <FaInstagramSquare className="footer_social_icon" />
         </a>
-        <a href="https://www.facebook.com">
+        <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
           <FaFacebookSquare className="footer_social_icon" />
         </a>
-        <a href="https://www.twitter.com">
+        <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
           <FaTwitterSquare className="footer_social_icon" />
         </a>
       </div>
