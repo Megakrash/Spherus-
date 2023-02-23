@@ -8,6 +8,9 @@
 }
 
 .fixtures-map {
+  -webkit-animation: swing-in-left-bck 0.5s ease-in-out both;
+  animation: swing-in-left-bck 0.5s ease-in-out both;
+
   &_btn {
     display: flex;
     margin-left: 3%;

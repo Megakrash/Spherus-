@@ -1,4 +1,6 @@
 @import "./variables.scss";
+@import "./buttons.scss";
+@import "./effects.scss";
 @import "./reset.scss";
 @import "./loginPopUp/loginPopUp.scss";
 @import "./recovery_password/recoveryRequest.scss";
@@ -26,7 +28,6 @@
 @import "../components/admin_components/admin_users/adminUsers.scss";
 @import "../pages/profile.scss";
 @import "./buttons/buttonLogin.scss";
-@import "./buttons.scss";
 @import "./admin_components/admin_category/adminCategory.scss";
 @import "../components/arthour/couilliere.scss";
 @import "../components/admin_components/admin_videos/popupVideo.scss";

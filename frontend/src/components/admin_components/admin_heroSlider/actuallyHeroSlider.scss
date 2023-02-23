@@ -4,6 +4,8 @@
   flex-direction: column;
   gap: 10px;
   margin-left: 2%;
+  -webkit-animation: swing-in-left-bck 0.5s ease-in-out both;
+  animation: swing-in-left-bck 0.5s ease-in-out both;
 
   &_video {
     display: flex;
