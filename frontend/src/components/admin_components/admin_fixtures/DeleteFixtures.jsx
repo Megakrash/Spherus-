@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import axios from "axios";
 import { FaPenFancy } from "react-icons/fa";
 import PropTypes from "prop-types";
+import HoverVideoPlayer from "react-hover-video-player";
 import ChoiceHero from "../admin_heroSlider/ChoiceHero";
-import VideoCard from "../../category_video/VideoCard";
 
 function DeleteFixtures({ el, getHeroInfo }) {
   const [choice, setChoice] = useState(false);
+  const videoUrl = `${import.meta.env.VITE_PORT_BACKEND}/${el.url}`;
 
   const deleteFromFixture = (id) => {
     axios
@@ -24,7 +25,13 @@ function DeleteFixtures({ el, getHeroInfo }) {
 
   return (
     <li className="fixtures-map">
-      <VideoCard classname="fixtures-vid-slot" {...el} />
+      <div className="actuallyHeroSlider_video">
+        <HoverVideoPlayer
+          videoClassName="actuallyHeroSlider_video_player"
+          videoSrc={videoUrl}
+          muted
+        />
+      </div>
       <div className="fixtures-map_btn">
         <button
           type="button"
@@ -61,6 +68,7 @@ export default DeleteFixtures;
 DeleteFixtures.propTypes = {
   getHeroInfo: PropTypes.func.isRequired,
   el: PropTypes.shape({
+    url: PropTypes.string,
     id: PropTypes.number,
   }).isRequired,
 };

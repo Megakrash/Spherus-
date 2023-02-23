@@ -104,12 +104,14 @@ function AdminHomeCurrentComp({ currentHome, getHome }) {
                             {...provided.dragHandleProps}
                           >
                             <div className="adminHomeCurrentComp_drag_box_infos">
-                              <p className="adminHomeCurrentComp_drag_box_infos_title">
-                                {whatType(type)}
-                              </p>
-                              <p className="adminHomeCurrentComp_drag_box_infos_name">
-                                "{whatName(type, idLink)}"
-                              </p>
+                              <div className="adminHomeCurrentComp_drag_box_infos_cat">
+                                <p className="adminHomeCurrentComp_drag_box_infos_cat_title">
+                                  {whatType(type)}
+                                </p>
+                                <p className="adminHomeCurrentComp_drag_box_infos_cat_name">
+                                  "{whatName(type, idLink)}"
+                                </p>
+                              </div>
                               {type === 1 &&
                                 <div className="adminHomeCurrentComp_drag_box_videos">
                                   <DragVideoList id={id} />
