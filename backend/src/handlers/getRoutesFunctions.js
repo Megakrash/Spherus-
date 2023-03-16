@@ -41,6 +41,24 @@ const getUserById = (req, res) => {
     });
 };
 
+const getUserByIdForNavBar = (req, res) => {
+  const id = parseInt(req.params.id, 10);
+
+  database
+    .query("SELECT id, url FROM user WHERE id = ?", [id])
+    .then(([user]) => {
+      if (user[0] != null) {
+        res.status(200).json(user[0]);
+      } else {
+        res.sendStatus(404);
+      }
+    })
+    .catch((err) => {
+      console.error(err);
+      res.status(500).send("Error retrieving data from database");
+    });
+};
+
 const getUserByEmail = (req, res) => {
   const { email } = req.params;
 
@@ -350,4 +368,5 @@ module.exports = {
   getHomeCategoriesName,
   getVideosByHomeId,
   getUsersCsv,
+  getUserByIdForNavBar,
 };

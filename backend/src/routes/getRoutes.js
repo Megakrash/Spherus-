@@ -10,6 +10,7 @@ router.get("/", verifyToken, getRoutesFunctions.welcome);
 /* users */
 router.get("/users", getRoutesFunctions.getUsers);
 router.get("/users/:id", getRoutesFunctions.getUserById);
+router.get("/users_navbar/:id", getRoutesFunctions.getUserByIdForNavBar);
 router.get("/csv", getRoutesFunctions.getUsersCsv);
 router.get("/email/users/:email", getRoutesFunctions.getUserByEmail);
 

@@ -20,18 +20,16 @@ function MenuBurger({
   handleRegisterPopUp,
 }) {
   const { isAdmin, userToken, id } = useContext(UserContext);
-
   const [size, setSize] = useState(false);
   const [user, setUser] = useState(null);
 
   const inputImgAvatar = useRef();
   const refBurgerContainer = useRef();
-
   const navigate = useNavigate();
 
   function getUser() {
     axios
-      .get(`${import.meta.env.VITE_PORT_BACKEND}/users/${id}`)
+      .get(`${import.meta.env.VITE_PORT_BACKEND}/users_navbar/${id}`)
       .then((res) => {
         setUser(res.data);
       })

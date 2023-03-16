@@ -55,34 +55,32 @@ function Fixtures() {
   }, []);
 
   return (
-    <div className="section_container">
-      {fixtures.length >= 1 && (
-        <div>
-          <div className="section_navigation">
-            {fixtures.length !== 0 && (
-              <div className="section_name">{displayFixtures.name}</div>
-            )}
-          </div>
-
-          <Carousel
-            containerClass="section_carousel"
-            responsive={responsive}
-            infinite
-          >
-            {fixtures.map((infos) => (
-              <div className="section_card" key={infos.id}>
-                <VideoCard
-                  id={infos.fk_fix_video_id}
-                  url={infos.url}
-                  title={infos.title}
-                  description={infos.description}
-                  display={infos.display}
-                />
-              </div>
-            ))}
-          </Carousel>
+    <div className="section">
+      <div className="section_container">
+        <div className="section_navigation">
+          {fixtures.length !== 0 && (
+            <div className="section_name">{displayFixtures.name}</div>
+          )}
         </div>
-      )}
+
+        <Carousel
+          containerClass="section_container_carousel"
+          responsive={responsive}
+          infinite
+        >
+          {fixtures.map((infos) => (
+            <div className="section_container_carousel_card" key={infos.id}>
+              <VideoCard
+                id={infos.fk_fix_video_id}
+                url={infos.url}
+                title={infos.title}
+                description={infos.description}
+                display={infos.display}
+              />
+            </div>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 }

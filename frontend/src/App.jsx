@@ -77,7 +77,7 @@ function App() {
 
   function getUser(tokeuUserId) {
     axios
-      .get(`${import.meta.env.VITE_PORT_BACKEND}/users/${tokeuUserId}`)
+      .get(`${import.meta.env.VITE_PORT_BACKEND}/users_navbar/${tokeuUserId}`)
       .then((res) => {
         setAvatarUrlContext(res.data.url);
       })
