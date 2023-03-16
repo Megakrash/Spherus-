@@ -59,7 +59,7 @@ const navbarDesktop = ({ handlePopUpLogIn, handleRegisterPopUp }) => {
         type="button"
         onClick={() => setIsBurgerClicked(!isBurgerClicked)}
       >
-        {user !== null ? (
+        {user !== null && user.url !== undefined ? (
           <img
             ref={inputImgAvatar}
             className="img-avatar-profil"
