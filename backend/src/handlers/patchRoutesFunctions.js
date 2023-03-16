@@ -224,9 +224,9 @@ const updateHomeById = (req, res) => {
 // Update title of the fixture section
 
 const updateFixtureTitle = (req, res) => {
-  const { fixName } = req.body;
+  const { name } = req.body;
   database
-    .query(`UPDATE display_fixtures SET name = ?`, [fixName])
+    .query(`UPDATE display_fixtures SET name = ?`, [name])
     .then(() => res.sendStatus(204))
     .catch((err) => console.error(err));
 };

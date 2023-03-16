@@ -16,14 +16,4 @@ database
   })
   .catch((err) => console.error(err));
 
-// database
-//     .query("SELECT * FROM movies")
-//     .then(([movies]) => console.log("Movies :", movies))
-//     .catch((err) => console.error(err));
-
-// database
-//     .query("SELECT * FROM users")
-//     .then(([users]) => console.log("Users :", users))
-//     .catch((err) => console.error(err));
-
 module.exports = database;

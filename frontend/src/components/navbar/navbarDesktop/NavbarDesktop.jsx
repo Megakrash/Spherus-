@@ -18,7 +18,7 @@ const navbarDesktop = ({ handlePopUpLogIn, handleRegisterPopUp }) => {
 
   function getUser() {
     axios
-      .get(`${import.meta.env.VITE_PORT_BACKEND}/users/${id}`)
+      .get(`${import.meta.env.VITE_PORT_BACKEND}/users_navbar/${id}`)
       .then((res) => {
         setUser(res.data);
       })
@@ -59,16 +59,18 @@ const navbarDesktop = ({ handlePopUpLogIn, handleRegisterPopUp }) => {
         type="button"
         onClick={() => setIsBurgerClicked(!isBurgerClicked)}
       >
-        {user && (
+        {user !== null ? (
           <img
             ref={inputImgAvatar}
             className="img-avatar-profil"
             src={`${import.meta.env.VITE_PORT_BACKEND}/${user.url}`}
             alt="avatar"
-            onError={() => {
-              inputImgAvatar.current.src =
-                "https://png.pngtree.com/png-clipart/20210129/ourlarge/pngtree-man-default-avatar-png-image_2813122.jpg";
-            }}
+          />
+        ) : (
+          <img
+            className="img-avatar-profil"
+            src="https://png.pngtree.com/png-clipart/20210129/ourlarge/pngtree-man-default-avatar-png-image_2813122.jpg"
+            alt="avatar"
           />
         )}
       </button>

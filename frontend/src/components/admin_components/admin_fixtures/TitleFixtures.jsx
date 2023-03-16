@@ -16,7 +16,7 @@ function TitleFixtures() {
   const handleUpdateTitle = () => {
     axios
       .patch(`${import.meta.env.VITE_PORT_BACKEND}/display_fixtures`, {
-        fixName,
+        name: fixName,
       })
       .then(() => getFixturesName());
   };
