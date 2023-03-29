@@ -7,7 +7,7 @@ import UserContext from "../../../contexts/UserContext";
 import AvatarUrlContext from "../../../contexts/AvatarUrlContext";
 import MenuBurger from "../menus/MenuBurger";
 
-const navbarDesktop = ({ handlePopUpLogIn, handleRegisterPopUp }) => {
+function navbarDesktop({ handlePopUpLogIn, handleRegisterPopUp }) {
   const [isLoopClicked, setIsLoopClicked] = useState(false);
   const [isBurgerClicked, setIsBurgerClicked] = useState(false);
   const [user, setUser] = useState(null);
@@ -84,7 +84,7 @@ const navbarDesktop = ({ handlePopUpLogIn, handleRegisterPopUp }) => {
       )}
     </div>
   );
-};
+}
 
 export default navbarDesktop;
 
