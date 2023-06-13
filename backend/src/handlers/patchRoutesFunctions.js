@@ -226,7 +226,7 @@ const updateHomeById = (req, res) => {
 const updateFixtureTitle = (req, res) => {
   const { name } = req.body;
   database
-    .query(`UPDATE display_fixtures SET name = ?`, [name])
+    .query(`UPDATE display_fixtures SET name = ? WHERE id = 1`, [name])
     .then(() => res.sendStatus(204))
     .catch((err) => console.error(err));
 };
