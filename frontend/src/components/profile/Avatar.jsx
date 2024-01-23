@@ -35,6 +35,7 @@ function Avatar({
         className="btn-choose-pic"
         type="button"
         onClick={() => handleClick()}
+        aria-label="Choose a profile picture"
       >
         <FaPen className="pen" />
       </button>

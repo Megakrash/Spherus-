@@ -1,10 +1,10 @@
-import UpdateUserByUser from "@components/profile/UpdateUserByUser";
-import PropTypes from "prop-types";
-import axios from "axios";
 import React, { useState, useEffect } from "react";
+import axios from "axios";
+import PropTypes from "prop-types";
 import { FaPen } from "react-icons/fa";
-import DeleteUser from "@components/profile/DeleteUser";
-import Avatar from "@components/profile/Avatar";
+import UpdateUserByUser from "../components/profile/UpdateUserByUser";
+import DeleteUser from "../components/profile/DeleteUser";
+import Avatar from "../components/profile/Avatar";
 
 function Profile({ iduser }) {
   const [user, setUser] = useState(null);
@@ -62,6 +62,7 @@ function Profile({ iduser }) {
                     setEmailUpdate(false);
                     setPasswordUpdate(false);
                   }}
+                  aria-label="Update firstname"
                 >
                   <FaPen className="pen" />
                 </button>
@@ -92,6 +93,7 @@ function Profile({ iduser }) {
                     setEmailUpdate(false);
                     setPasswordUpdate(false);
                   }}
+                  aria-label="Update Lastname"
                 >
                   <FaPen className="pen" />
                 </button>
@@ -122,6 +124,7 @@ function Profile({ iduser }) {
                     setEmailUpdate(false);
                     setPasswordUpdate(false);
                   }}
+                  aria-label="Update nickname"
                 >
                   <FaPen className="pen" />
                 </button>
@@ -152,6 +155,7 @@ function Profile({ iduser }) {
                     setEmailUpdate(false);
                     setPasswordUpdate(false);
                   }}
+                  aria-label="Update birthday"
                 >
                   <FaPen className="pen" />
                 </button>
@@ -182,6 +186,7 @@ function Profile({ iduser }) {
                     setEmailUpdate(!emailUpdate);
                     setPasswordUpdate(false);
                   }}
+                  aria-label="Update email"
                 >
                   <FaPen className="pen" />
                 </button>
@@ -212,6 +217,7 @@ function Profile({ iduser }) {
                     setEmailUpdate(false);
                     setPasswordUpdate(!passwordUpdate);
                   }}
+                  aria-label="Update password"
                 >
                   <FaPen className="pen" />
                 </button>

@@ -45,11 +45,11 @@ function LoginPopUp({ setUserContext, setControlPopUpLogIn }) {
     <div className="login-pop-up">
       <div className="login-pop-up_card">
         <h2>Connexion</h2>
-        <button type="button" onClick={closePopUp}>
+        <button type="button" onClick={closePopUp} aria-label="Close modal">
           <FaSkull className="close_btn" />
         </button>
         <form className="login-form" onSubmit={login}>
-          <label htmlFor="email">
+          <label htmlFor="email" aria-label="email">
             <input
               type="email"
               className="email"
@@ -60,7 +60,7 @@ function LoginPopUp({ setUserContext, setControlPopUpLogIn }) {
               }}
             />
           </label>
-          <label htmlFor="password">
+          <label htmlFor="password" aria-label="Password">
             <input
               type="password"
               className="password"
@@ -77,7 +77,7 @@ function LoginPopUp({ setUserContext, setControlPopUpLogIn }) {
               Reset it
             </NavLink>
           </p>
-          <label htmlFor="submit">
+          <label htmlFor="submit" aria-label="Submit">
             <button className="submitBtn loginVerification" type="submit">
               <div className="svg-wrapper">
                 <svg

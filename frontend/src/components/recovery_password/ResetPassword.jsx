@@ -26,7 +26,7 @@ function Recovered() {
 
   return !validation ? (
     <form className="_password-validation">
-      <label htmlFor="password">
+      <label htmlFor="password" aria-label="Password">
         <input
           type="password"
           className="password"
@@ -38,7 +38,7 @@ function Recovered() {
           }}
         />
       </label>
-      <label htmlFor="password">
+      <label htmlFor="password" aria-label="Password">
         <input
           type="password"
           className="password"
@@ -57,7 +57,7 @@ function Recovered() {
             : "_unvalidate"
         }
       >
-        <label htmlFor="button">
+        <label htmlFor="button" aria-label="Submit">
           <input
             name="submit"
             type="button"

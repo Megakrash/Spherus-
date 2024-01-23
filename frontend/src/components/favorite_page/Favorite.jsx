@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useContext, useState, useEffect } from "react";
-import VideoCard from "@components/category_video/VideoCard";
-import { useNavigate } from "react-router-dom";
 import { FaAngleLeft } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import VideoCard from "../category_video/VideoCard";
 import UserContext from "../../contexts/UserContext";
 
 function Favorite() {
@@ -41,6 +41,7 @@ function Favorite() {
           onClick={() => {
             navigate(-1);
           }}
+          aria-label="Navigate to previous page"
         >
           <FaAngleLeft className="arrow" />
         </button>

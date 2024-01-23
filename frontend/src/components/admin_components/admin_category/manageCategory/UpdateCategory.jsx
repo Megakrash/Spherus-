@@ -62,6 +62,7 @@ function UpdateCategory({ id, name, getAllCat }) {
             onClick={() => {
               setShowUpdateName(!showUpdateName);
             }}
+            aria-label="Show update category name"
           >
             <FaPen
               className={showUpdateName === true ? "svgPen_activ" : "svgPen"}
@@ -82,6 +83,7 @@ function UpdateCategory({ id, name, getAllCat }) {
                 onClick={() => {
                   updateCatName();
                 }}
+                aria-label="Update category name"
               >
                 <FaCheck className="svgCheck" />
               </button>
@@ -94,6 +96,7 @@ function UpdateCategory({ id, name, getAllCat }) {
           onClick={() => {
             deleteCat();
           }}
+          aria-label="Delete category"
         >
           <FaTrashAlt className="svgTrash" />
         </button>

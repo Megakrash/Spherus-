@@ -38,6 +38,7 @@ function navbarDesktop({ handlePopUpLogIn, handleRegisterPopUp }) {
           className="btn-svg"
           type="button"
           onClick={() => setIsLoopClicked(true)}
+          aria-label="Search"
         >
           <svg
             className="loop"

@@ -20,6 +20,7 @@ function NavbarMobile({ handlePopUpLogIn, handleRegisterPopUp }) {
           className="btn-svg"
           type="button"
           onClick={() => setIsLoopClicked(true)}
+          aria-label="Search"
         >
           <svg
             className="loop"
@@ -47,6 +48,7 @@ function NavbarMobile({ handlePopUpLogIn, handleRegisterPopUp }) {
           e.stopPropagation();
           handleBurgerClick();
         }}
+        aria-label="Menu"
       >
         <div className="bar bar1" />
         <div className="bar bar2" />

@@ -107,6 +107,7 @@ function Video({ title, description, arrCatName, date, display, videoUrl }) {
           onClick={() => {
             navigate(-1);
           }}
+          aria-label="Navigate to previous page"
         >
           <FaAngleLeft className="arrow" />
         </button>

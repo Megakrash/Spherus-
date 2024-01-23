@@ -10,7 +10,7 @@ function WhyRegister({ setControlWhyRegisterPopUp }) {
   return (
     <div className="register-popup">
       <div className="register_card">
-        <button type="button" onClick={closePopUp}>
+        <button type="button" onClick={closePopUp} aria-label="Close popup">
           <FaSkull className="close_btn" />
         </button>
         <h2>Why signing up on Spherus?</h2>

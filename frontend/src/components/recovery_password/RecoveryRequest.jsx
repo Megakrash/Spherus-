@@ -50,7 +50,7 @@ function RecoveryRequest() {
         <div className="login-pop-up_card">
           <h2>Enter your email address</h2>
           <form className="login-form" onSubmit={handleRandomCode}>
-            <label htmlFor="email">
+            <label htmlFor="email" aria-label="Email">
               <input
                 type="email"
                 className="email"
@@ -60,7 +60,7 @@ function RecoveryRequest() {
                 onChange={(e) => setUserEmail(e.target.value)}
               />
             </label>
-            <label htmlFor="submit">
+            <label htmlFor="submit" aria-label="Submit">
               <button className="submitBtn emailVerification" type="submit">
                 <div className="svg-wrapper">
                   <svg

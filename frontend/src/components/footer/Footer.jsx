@@ -46,13 +46,28 @@ function Footer() {
         </NavLink>
       </div>
       <div className="footer_social">
-        <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Instagram"
+        >
           <FaInstagramSquare className="footer_social_icon" />
         </a>
-        <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Facebook"
+        >
           <FaFacebookSquare className="footer_social_icon" />
         </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Twitter"
+        >
           <FaTwitterSquare className="footer_social_icon" />
         </a>
       </div>
@@ -76,6 +91,7 @@ function Footer() {
             onClick={() => {
               window.scrollTo(0, 0);
             }}
+            aria-label="Scroll to top"
           >
             <FaArrowAltCircleUp />
           </button>

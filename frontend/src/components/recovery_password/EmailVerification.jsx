@@ -82,7 +82,9 @@ function EmailVerification() {
       })
       .then(() => setDisable(true))
       .then(() =>
-        alert("A new OTP has succesfully been sent to your email address")
+        console.error(
+          "A new OTP has succesfully been sent to your email address"
+        )
       )
       .then(() => setTimer(60))
       .catch((err) => console.error(err));
@@ -103,7 +105,7 @@ function EmailVerification() {
           <form className="code-form">
             <div className="_numbers">
               {codeInput.map((input, index) => (
-                <label htmlFor="code_field">
+                <label htmlFor="code_field" aria-label="Secret code">
                   <input
                     className="code-input"
                     ref={inputRefs[index]}
