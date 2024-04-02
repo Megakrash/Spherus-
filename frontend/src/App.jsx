@@ -7,14 +7,15 @@ import ThemeContext from "./contexts/ThemeContext";
 import AvatarUrlContext from "./contexts/AvatarUrlContext";
 
 const Home = lazy(() => import("./pages/Home"));
-const Policy = lazy(() =>
-  import("./components/footer/legal_pages/policy/Policy")
+const Policy = lazy(
+  () => import("./components/footer/legal_pages/policy/Policy")
 );
-const Cookies = lazy(() =>
-  import("./components/footer/legal_pages/cookies/Cookies")
+const Cookies = lazy(
+  () => import("./components/footer/legal_pages/cookies/Cookies")
 );
-const TermsOfServices = lazy(() =>
-  import("./components/footer/legal_pages/termsofservices/TermsOfServices")
+const TermsOfServices = lazy(
+  () =>
+    import("./components/footer/legal_pages/termsofservices/TermsOfServices")
 );
 const CategoryPage = lazy(() => import("./pages/CategoryPage"));
 const RegisterForm = lazy(() => import("./pages/RegisterForm"));
@@ -25,18 +26,18 @@ const Profile = lazy(() => import("./pages/Profile"));
 const Navbar = lazy(() => import("./components/navbar/Navbar"));
 const Footer = lazy(() => import("./components/footer/Footer"));
 const LoginPopUp = lazy(() => import("./components/loginPopUp/LoginPopUp"));
-const RecoveryRequest = lazy(() =>
-  import("./components/recovery_password/RecoveryRequest")
+const RecoveryRequest = lazy(
+  () => import("./components/recovery_password/RecoveryRequest")
 );
-const EmailVerification = lazy(() =>
-  import("./components/recovery_password/EmailVerification")
+const EmailVerification = lazy(
+  () => import("./components/recovery_password/EmailVerification")
 );
-const ResetPassword = lazy(() =>
-  import("./components/recovery_password/ResetPassword")
+const ResetPassword = lazy(
+  () => import("./components/recovery_password/ResetPassword")
 );
 const Favorite = lazy(() => import("./components/favorite_page/Favorite"));
-const WhyRegister = lazy(() =>
-  import("./components/navbar/whyregisterpopup/WhyRegister")
+const WhyRegister = lazy(
+  () => import("./components/navbar/whyregisterpopup/WhyRegister")
 );
 
 function App() {
